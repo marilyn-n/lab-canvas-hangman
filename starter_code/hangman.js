@@ -19,12 +19,12 @@ Hangman.prototype.checkIfLetter = function (keyCode) {
   return false;
 };
 
-// Hangman.prototype.checkClickedLetters = function (key) {
-// };
+Hangman.prototype.checkClickedLetters = function (key) {
+  return this.letters.indexOf(key) === -1;
+};
 
-// Hangman.prototype.addCorrectLetter = function (i) {
-
-// };
+Hangman.prototype.addCorrectLetter = function (i) {
+};
 
 // Hangman.prototype.addWrongLetter = function (letter) {
 
