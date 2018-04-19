@@ -1,19 +1,25 @@
 var hangman;
 
-// function Hangman() {
+function Hangman() {
+  this.words = ['casa', 'departmento', 'cabaña'];
+  this.secretWord = 'cafeconleche';
+  this.letters = [];
+  this.guessedLetter = '';
+  this.errorsLeft = 10;
+}
 
-// }
+Hangman.prototype.getWord = function (str) {
+  return 'hola';
+};
 
-// Hangman.prototype.getWord = function () {
-
-// };
-
-// Hangman.prototype.checkIfLetter = function (keyCode) {
-
-// };
+Hangman.prototype.checkIfLetter = function (keyCode) {
+  if ((keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122)) {
+    return true;
+  }
+  return false;
+};
 
 // Hangman.prototype.checkClickedLetters = function (key) {
-
 // };
 
 // Hangman.prototype.addCorrectLetter = function (i) {
